@@ -11,8 +11,8 @@ do
 	# what should the table be named? - based on the directory name, removes the leading ./ and lowercases it
 	table=$(echo "$dir" | sed -re 's/\.\///' | tr '[:upper:]' '[:lower:]')
 
-	# and finally dump the sql statement into something like place.sql, translating the table name on the way
-	dbf_dump --info --sql $first_file | sed -re 's/'"$file_name"'/'"$table"'/' > $table.sql
+	# and finally dump the sql statement into something like place.sql, translating the table name on the way and appending a final ; to make sqlite happy
+	dbf_dump --info --sql $first_file | sed -re 's/'"$file_name"'/'"$table"'/' | sed -re 's/^\)$/\);/' > $table.sql
 	
 	echo "Saved $table.sql"
 done
