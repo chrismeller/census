@@ -1,0 +1,9 @@
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/ADDR
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/ADDRFEAT
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/COUNTY
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/EDGES
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/FACES
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/FACESMIL
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/MIL
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/PLACE
+wget --recursive --level=1 --accept=zip ftp://ftp2.census.gov/geo/tiger/TIGER2011/STATE
