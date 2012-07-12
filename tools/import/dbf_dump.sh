@@ -1,5 +1,6 @@
 for file in *.dbf
 do
 	echo $file
-	dbf_dump --fs=\| $file > $file.csv
+	mkdir -p ../csv/
+	dbf_dump --fs=\| $file > ../csv/$file.csv
 done
